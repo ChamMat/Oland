@@ -15,7 +15,7 @@
             <div class="tile grass2"></div>
             <div class="tile grass1"></div>
             <div class="tile grass2"></div>
-            <div class="tile grass1"></div>
+            <div class="tile roadX"></div>
             <div class="tile grass2"></div>
             <div class="tile grass1"></div>
             <div class="tile grass2"></div>
