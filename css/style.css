@@ -1,0 +1,21 @@
+.panel{
+
+}
+
+.tile{
+    width: 64px;
+    height: 64px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.grass1{
+    background-image: url("../lib/medievalTile_57.png");
+}
+
+.grass2{
+    background-image: url("../lib/medievalTile_58.png");
+}
