@@ -223,6 +223,10 @@ font-weight: bold;
     background-image: url("../lib/units/medievalUnit_24.png");
 }
 
+.unitXX{
+    background-image: url("../lib/units/medievalUnit_XX.png");
+}
+
 .house1{
     background-image: url("../lib/house/medievalStructure_09.png");
 }

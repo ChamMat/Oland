@@ -45,11 +45,10 @@ class Data{
 
     }
 
-    public function getPerso($id){
+    public function getAllPerso(){
         $sql='
         SELECT *
         FROM `perso`
-        WHERE `id` = '.$id.'
         ';
 
         $req = $this->pdo->query($sql);
@@ -60,7 +59,7 @@ class Data{
             return false;
         }
 
-        return $req->fetch(PDO::FETCH_ASSOC);
+        return $req->fetchAll(PDO::FETCH_ASSOC);
         
     }
     

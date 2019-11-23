@@ -1,5 +1,6 @@
 <?php
 
+require 'class/Perso.php';
 require 'class/Tile.php';
 require 'class/Map.php';
 
