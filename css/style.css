@@ -1,15 +1,46 @@
-.panel{
+body{
     height: 100vh;
+    width: 100vw;
+    display: flex;
+   
+    background-color: rgb(73, 73, 73);
+}
+
+.wrapper{
+
+border-right: solid 5px rgb(153, 153, 153);;
+width: 50%;
+
+}
+
+.title{
+
+font-size: 2em;
+margin: 1em 2em;
+color: rgb(153, 153, 153);
+font-weight: bold;
+
+}
+
+.panel{
+    width: 640px;
+    height: 640px;
+    margin-left: 8rem;
+    border: rgb(153, 153, 153) 5px solid;
 }
 
 .row{
-    display: flex;
-    justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .tile{
     width: 64px;
     height: 64px;
+}
+
+.tile .tile:hover{
+    background-color: rgb(200,200,200, 0.2);
 }
 
 .grass1{
@@ -56,7 +87,7 @@
     background-image: url("../lib/ground/medievalTile_32.png");
 }
 
-.roadleftToBottom{
+.roadLeftToBottom{
     background-image: url("../lib/ground/medievalTile_18.png");
 }
 
@@ -192,3 +223,45 @@
     background-image: url("../lib/units/medievalUnit_24.png");
 }
 
+.house1{
+    background-image: url("../lib/house/medievalStructure_09.png");
+}
+
+.house2{
+    background-image: url("../lib/house/medievalStructure_17.png");
+}
+
+.house3{
+    background-image: url("../lib/house/medievalStructure_18.png");
+}
+
+.house4{
+    background-image: url("../lib/house/medievalStructure_19.png");
+}
+
+.house5{
+    background-image: url("../lib/house/medievalStructure_20.png");
+}
+
+.house6{
+    background-image: url("../lib/house/medievalStructure_21.png");
+}
+
+.moulinDown{
+    background-image: url("../lib/moulin/medievalStructure_11.png");
+}
+.moulinUp{
+    background-image: url("../lib/moulin/medievalStructure_10.png");
+}
+
+.roadEndLeft{
+    background-image: url("../lib/ground/medievalTile_19.png");
+}
+
+.roadEndRight{
+    background-image: url("../lib/ground/medievalTile_33.png");
+}
+
+.roadEndBottom{
+    background-image: url("../lib/ground/medievalTile_35.png");
+}

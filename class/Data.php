@@ -44,6 +44,25 @@ class Data{
         return $req->fetchAll(PDO::FETCH_ASSOC);
 
     }
+
+    public function getPerso($id){
+        $sql='
+        SELECT *
+        FROM `perso`
+        WHERE `id` = '.$id.'
+        ';
+
+        $req = $this->pdo->query($sql);
+
+        if($req === false){
+
+            exit('Echec de la connection à la base de donnée.');
+            return false;
+        }
+
+        return $req->fetch(PDO::FETCH_ASSOC);
+        
+    }
     
 
 }

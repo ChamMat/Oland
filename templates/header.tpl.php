@@ -9,3 +9,11 @@
     <title>OLand</title>
 </head>
 <body>
+
+<div class = "wrapper">
+
+<header class ="title">
+
+<h1>O'land</h1>
+
+</header>
