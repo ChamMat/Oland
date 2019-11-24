@@ -1,33 +1,46 @@
-body{
+.wrapper{
     height: 100vh;
     width: 100vw;
-    display: flex;
-   
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(241, 239, 226);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.wrapper{
-
-border-right: solid 5px rgb(153, 153, 153);;
-width: 50%;
-
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .title{
+    border-right: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+    padding: 2rem 4em;
+    background-color: rgb(243, 242, 233);
+    width: fit-content;
+    display: flex;
+}
 
-font-size: 2em;
-margin: 1em 2em;
-color: rgb(153, 153, 153);
-font-weight: bold;
-
+.title-h1{
+    font-size: 4em;
+    font-weight: bold;
 }
 
 .panel{
     width: 640px;
     height: 640px;
-    margin-left: 8rem;
-    border: rgb(153, 153, 153) 5px solid;
+    border: rgb(238, 237, 232) 5px solid;
 }
+
+.title-subtitle{
+    font-size: .8em;
+    margin:.4em 1rem;
+    width: 5em;
+}
+
+.italic{
+    font-style: italic;
+}
+
+
 
 .row{
    display: flex;
@@ -37,6 +50,7 @@ font-weight: bold;
 .tile{
     width: 64px;
     height: 64px;
+    background-size: auto;
 }
 
 .tile .tile:hover{
@@ -268,4 +282,73 @@ font-weight: bold;
 
 .roadEndBottom{
     background-image: url("../lib/ground/medievalTile_35.png");
+}
+
+.firstMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    border:none;
+    font-size: 2em;
+    padding: 1em 2em;
+    margin:5em 5em;
+    border-radius: 2em;
+    cursor: pointer;
+    background-color: rgb(185, 184, 173);
+    font-family: inherit;
+}
+
+.button:hover{
+    box-shadow: rgb(184, 182, 174, 0.5) 0 0 2em 0;
+}
+
+.menuConnection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.menuConnectionForm{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuConnectionFormFieldSet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inputArea{
+    padding: 1em;
+    margin: .5em 2em;
+    font-size: 1.5em;
+}
+
+.warning{
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+    width: fit-content;
+    background-color: red;
+}
+
+.submit{
+    border:none;
+    font-size: 1.5em;
+    padding: 0 2em;
+    border-radius: 2em;
+    cursor: pointer;
+    background-color: rgb(185, 184, 173);
+    font-family: inherit;
+}
+
+.submit:hover{
+    box-shadow: rgb(184, 182, 174, 0.5) 0 0 2em 0;
+
 }

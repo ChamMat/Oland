@@ -62,6 +62,23 @@ class Data{
         return $req->fetchAll(PDO::FETCH_ASSOC);
         
     }
+
+    public function getUser(){
+        $sql='
+        SELECT *
+        FROM `compteUser`
+        ';
+
+        $req = $this->pdo->query($sql);
+
+        if($req === false){
+
+            exit('Echec de la connection à la base de donnée.');
+            return false;
+        }
+
+        return $req->fetchAll(PDO::FETCH_ASSOC);
+    }
     
 
 }

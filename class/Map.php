@@ -5,10 +5,9 @@ class Map{
     private $tiles;
     private $perso;
 
-    public function __construct(){
+    public function __construct($data){
 
-        require 'class/Data.php';
-        $data = new Data();
+        
 
         $tilesArray = $data->getTilesList();
 
