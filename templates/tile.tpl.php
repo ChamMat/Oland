@@ -16,19 +16,13 @@ if( $tileList[$idTile]->getCharacter() != NULL ){
     $persoImg = NULL;
 }
 
-
-// if($map->getPerso($tileList[$idTile]->getCharacter()) ==null ){
-//     $persoImg =NULL;
-// }else{
-//     $persoImg = $map->getPerso($tileList[$idTile]->getCharacter())->getImg();
-// }
-
 ?>
 
-<a href="index.php?id=<?=$idTile+1?>">
-<div class="tile <?=$backgroundImg?>">
+<a href="moveTo.php?id=<?=$idTile+1?>">
+<div class="tile <?=$backgroundImg?>" id="tile<?=$idTile+1?>">
 <div class="tile <?=$concretItem?>">
 <div class="tile <?=$persoImg?>">
+
 
 
 </div>

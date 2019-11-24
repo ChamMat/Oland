@@ -63,11 +63,31 @@ class Data{
         
     }
 
-    public function getUser(){
+    public function getPerso($id){
+
+        $sql='
+        SELECT *
+        FROM `perso`
+        WHERE `id`="'.$id.'"';
+
+        $req = $this->pdo->query($sql);
+
+        if($req === false){
+
+            exit('Echec de la connection à la base de donnée.');
+            return false;
+        }
+
+        return $req->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
+    public function getUser($selecteur = ""){
         $sql='
         SELECT *
         FROM `compteUser`
-        ';
+        '.$selecteur
+        ;
 
         $req = $this->pdo->query($sql);
 
@@ -80,5 +100,14 @@ class Data{
         return $req->fetchAll(PDO::FETCH_ASSOC);
     }
     
+    public function updatePos($perso, $pos){
+
+        $sql='
+        UPDATE `perso`
+        SET `pos`="'.$pos.'"
+        WHERE `id`="'.$perso.'"';
+
+        $this->pdo->exec($sql);
+    }
 
 }

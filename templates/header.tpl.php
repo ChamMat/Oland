@@ -18,4 +18,16 @@
 
 <aside class="title-subtitle">Bienvenu dans O'land <span class="italic">interactif</span></aside>
 
+
+<?php
+
+if(isset($_SESSION["user"])){ ?>
+
+<div>Connecté en temps que <?=$_SESSION["user"]?> </div>
+
+<?php
+}
+?>
+
 </header>
+

@@ -18,7 +18,8 @@ $test = false;
   }
 
   if ($test){
-    $_SESSION['user'] = $value["user"];
+    $_SESSION['user'] = $_POST['user'];
+    setcookie("user", $_POST['user'], time()+(3600*24*30));
   }
 }
 

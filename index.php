@@ -5,6 +5,10 @@ session_start();
 require 'class/Data.php';
 $data = new Data();
 
+if($_COOKIE["user"]){
+    $_SESSION['user']= $_COOKIE["user"];
+}
+
 if(empty($_SESSION["user"])){
 
     require 'templates/header.tpl.php';
