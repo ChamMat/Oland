@@ -30,10 +30,39 @@ if(isset($_POST)){
     $inscriptionValide = false;
 }
 
+
 if($inscriptionValide){
 
+    $sql ="
+    INSERT INTO `perso` (img, pos) VALUES ('unit".$_POST["img"]."', 47)";
 
+    $data->execSql($sql);
+
+    $persoId =$data->getLastPerso();
+
+    $sql ="
+    INSERT INTO `compteUser` (`user`, `password`, `persoId`)
+    VALUE ('".$_POST['pseudo']."', '".$_POST['password']."', '".$persoId["MAX(`id`)"]."')
+    ";
+
+
+    $data->execSql($sql);
+
+    ?>
+
+    <p>Enregistrement réussi!</p>
+
+    <form action="connection.php" method="post">
+    <input type="text" name="user" value="<?=$_POST['pseudo']?>" hidden>
+    <input type="password" name="password" value="<?=$_POST['password']?>" hidden>
+    <button type="submit" class=submit>GO!</button>
+    </form>
+
+    <?php
+
+    
 
 }
+
 
 

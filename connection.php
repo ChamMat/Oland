@@ -4,6 +4,8 @@ session_start();
 require 'class/Data.php';
 $data = new Data();
 
+var_dump($_POST);
+
 if(isset($_POST)){
 
   $userList = $data->getUser();

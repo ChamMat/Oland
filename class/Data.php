@@ -110,4 +110,24 @@ class Data{
         $this->pdo->exec($sql);
     }
 
+    public function execSql($sql){
+        $this->pdo->exec($sql);
+    }
+
+    public function getLastPerso(){
+        $sql="
+        SELECT MAX(`id`)
+        FROM `perso`
+        ";
+
+        $req = $this->pdo->query($sql);
+
+        if($req===false){
+            exit('Echec de la connection');
+            return false;
+        }
+
+        return $req->fetch(PDO::FETCH_ASSOC);
+    }
+
 }
