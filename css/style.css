@@ -324,18 +324,25 @@ a{
     text-align: center;
 }
 
+.menuInscriptionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inputArea{
-    padding: 1em;
+    padding: 0.5em;
     margin: .5em 2em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .warning{
     padding: 2em;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     width: fit-content;
     background-color: red;
+    margin-top: 1em;
 }
 
 .submit{
@@ -351,4 +358,32 @@ a{
 .submit:hover{
     box-shadow: rgb(184, 182, 174, 0.5) 0 0 2em 0;
 
+}
+
+.selectImg{
+    width: 2em;
+}
+
+.optionImg{
+    width: 2em;
+}
+
+.avatarChoise{
+    width: 43%;
+    margin-bottom: 2em;
+}
+
+.labelImg{
+    margin-right:2rem;
+}
+
+.inputImg{
+    margin-bottom: 2em
+    ;
+}
+
+
+.radioLabel{
+    border: solid 1px black;
+    display: inline;
 }

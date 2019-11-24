@@ -17,6 +17,6 @@
 
     </form>
 
-    <p class="warning">Vos mots de passe ne seront pas cryptés et apparaitront en claire dans ma base de donnée!!!</p>
+    <p class="warning">Ton mots de passe ne sera pas cryptés et apparaitra en claire dans ma base de donnée!!!<br>N'utilise que des mots de passe simple que tu n'utilise pas ailleurs</p>
 
 </div>

@@ -13,12 +13,17 @@ if(empty($_SESSION["user"])){
 
     require 'templates/header.tpl.php';
 
-    if(!isset($_GET[connection]) && !isset($_GET[inscription])){
-    require 'templates/form.tpl.php';
+    if(!isset($_GET["connection"]) && !isset($_GET["inscription"])){
+
+        require 'templates/form.tpl.php';
     }
 
-    if($_GET[connection]){
+    if($_GET["connection"]){
         require 'templates/connection.tpl.php';
+    }
+
+    if($_GET["inscription"]){
+        require 'templates/inscription.tpl.php';
     }
 
     require 'template/footer.tpl.php';
